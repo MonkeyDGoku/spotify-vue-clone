@@ -19,7 +19,7 @@ const scopes = [
 ];
 //const redirectUri = encodeURI("http://localhost:8080/");
 //for production
-const redirectUri = encodeURI("https://spotify-vue-clone-p8yc7fuxp-monkeydgoku.vercel.app/%23/");
+const redirectUri = "https://spotify-vue-clone-p8yc7fuxp-monkeydgoku.vercel.app/%23/";
 const clientId = "2b1cbad103484b7dacde3d5cd4b6b321";
 const state = "some-state-of-my-choice";
 const showDialog = true;
