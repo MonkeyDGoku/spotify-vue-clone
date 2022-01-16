@@ -17,11 +17,13 @@ const scopes = [
   "user-follow-read",
 
 ];
-const redirectUri = encodeURI("http://localhost:8080/"),
-  clientId = "2b1cbad103484b7dacde3d5cd4b6b321",
-  state = "some-state-of-my-choice",
-  showDialog = true,
-  responseType = "token"
+//const redirectUri = encodeURI("http://localhost:8080/");
+//for production
+const redirectUri = encodeURI("https://spotify-vue-clone-p8yc7fuxp-monkeydgoku.vercel.app/#/");
+const clientId = "2b1cbad103484b7dacde3d5cd4b6b321";
+const state = "some-state-of-my-choice";
+const showDialog = true;
+const responseType = "token";
 
 export const loginUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
 
